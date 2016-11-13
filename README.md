@@ -6,9 +6,9 @@ HDM (Hierachy Distributed Matrix) is a light-weight, optimized, functional frame
 # Quick start a HDM cluser
 
 
-## start master
+## Start the master
 
-Users can start the master node of HDM by execute the shell cmd `./startip.sh master [port]?` under the root folder of hdm-core, for example:
+Users can start the master node of HDM by execute the shell cmd `./startup.sh master [port]?` under the root folder of hdm-core, for example:
 
 ```shell
 cd ./hdm-core
@@ -23,7 +23,7 @@ cd ./hdm-core
 ```
 
 
-## start a slave
+## Start a slave
 
 Users can start a slave node by executing the shell cmd `./startup.sh slave [port of slave] [address of the master] [number of cores] [size of JVM memory] [port for data transferring]`
 
@@ -33,7 +33,7 @@ cd ./hdm-core
 ```
 
 
-## submit depdency to the server
+## Submit dependencies to the HDM server
 
 Users can submit the dependency for an HDM application by executing the shell cmd: `./hdm-client.sh submit [master url] [application ID] [application version] [dependency file] [author]`
 
@@ -45,7 +45,7 @@ Users can submit the dependency for an HDM application by executing the shell cm
   | dwu
 ```
 
-## start HDM console
+## Start the HDM console
 
 Users can start the HDM console by develop the `.war` file of hdm-console to any web server such as Apache Tomcat or Jetty.
 
