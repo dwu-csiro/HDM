@@ -152,9 +152,11 @@ for (i <- 1 to iteration){
 }
 
 ```
+
 # Demo
 
 Please click the screenshot below to watch the video:
+
 [![Demo for HDM framework](http://img.youtube.com/vi/Gsz7z5bQ1zI/0.jpg)]("https://www.youtube.com/watch?v=Gsz7z5bQ1zI")
 
 
