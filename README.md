@@ -1,7 +1,9 @@
 HDM
 ==============
 
-HDM (Hierachy Distributed Matrix) is a light-weight, optimized, functional framework for data processing and analytics on large scale data sets.
+[![Build Status](https://travis-ci.org/tiantianwdy/hdm.svg?branch=hdm-mc-dev)](https://travis-ci.org/tiantianwdy/hdm)
+
+HDM (Hierarchy Distributed Matrix) is a light-weight, optimized, functional framework for data processing and analytics on large scale data sets.
 
 
 # Build HDM from source code
@@ -10,18 +12,17 @@ HDM is built using Apache Maven. To build HDM from source code, go to the direct
 
 ```shell
 mvn -DskipTests clean install
-
 ```
 
-then unzip the hdm-core.zip from the `target` folder, after then you can see all the components required for HDM.
+Then unzip the hdm-core.zip from the `target` folder, after then you can see all the components required for HDM.
 
 
 # Quick start a HDM cluser
 
 
-## start master
+## Start master
 
-Users can start the master node of HDM by execute the shell cmd `./startip.sh master [port]?` under the root folder of hdm-core, for example:
+Users can start the master node of HDM by execute the shell cmd `./startup.sh master [port]?` under the root folder of hdm-core, for example:
 
 ```shell
 cd ./hdm-core
@@ -36,7 +37,7 @@ cd ./hdm-core
 ```
 
 
-## start a slave
+## Start a slave
 
 Users can start a slave node by executing the shell cmd `./startup.sh slave [port of slave] [address of the master] [number of cores] [size of JVM memory] [port for data transferring]`
 
@@ -46,7 +47,7 @@ cd ./hdm-core
 ```
 
 
-## submit depdency to the server
+## Submit depdency to the server
 
 Users can submit the dependency for an HDM application by executing the shell cmd: `./hdm-client.sh submit [master url] [application ID] [application version] [dependency file] [author]`
 
@@ -58,10 +59,9 @@ Users can submit the dependency for an HDM application by executing the shell cm
   | dwu
 ```
 
-## start HDM console
+## Start HDM console
 
-Users can start the HDM console by develop the `.war` file of hdm-console to any web server such as Apache Tomcat or Jetty.
-
+Users can start the HDM console by deploy the `hdm-console-0.0.1.war` file of hdm-console to any web servers such as Apache Tomcat or Jetty.
 
 
 # Programming in HDM
@@ -103,7 +103,7 @@ trace | ExecutionTrace | Returns a collection of execution traces for the last e
 
 For the consideration of performance, after the computation is triggered, the client side program would obtain the results in a asynchronous manner.
 
-For example, an user can print out the results of `WordCount program` using the code below:
+For example, an user can print out the results of `WordCount` program using the code below:
 
 ```scala
 wordcount.traverse(context = "10.10.0.100:8999") onComplete {
@@ -114,7 +114,7 @@ wordcount.traverse(context = "10.10.0.100:8999") onComplete {
 
 ## Examples
 
-To better illustrate how to program in HDM, here are some examples as bellow:
+To better illustrate how to program in HDM, here are some examples as below:
 
 ### WordCount
 
@@ -153,10 +153,6 @@ for (i <- 1 to iteration){
 
 ```
 
-# Demo
 
-Please click the screenshot below to watch the video:
-
-[![Demo for HDM framework](http://img.youtube.com/vi/Gsz7z5bQ1zI/0.jpg)](https://www.youtube.com/watch?v=Gsz7z5bQ1zI)
 
 

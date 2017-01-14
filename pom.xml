@@ -4,7 +4,7 @@
 <modelVersion>4.0.0</modelVersion>
 
 <groupId>org.hdm</groupId>
-<artifactId>HDM_2.10</artifactId>
+<artifactId>scala_2.10</artifactId>
 <version>0.0.1</version>
 <packaging>pom</packaging>
 
@@ -26,8 +26,8 @@
 <modules>
     <module>akka-distribution</module>
     <module>hdm-core</module>
+    <module>hdm-benchmark</module>
     <module>hdm-console</module>
-    <!--    <module>hdm-benchmark</module> -->
     <!--<module>hdm-model-converter</module>-->
 </modules>
 

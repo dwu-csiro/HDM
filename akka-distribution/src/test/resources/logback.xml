@@ -10,7 +10,7 @@
         </encoder>
     </appender>
 
-    <logger name="org.hdm" level="DEBUG" additivity="false">
+    <logger name="com.baidu" level="DEBUG" additivity="false">
         <appender-ref ref="STDOUT"/>
     </logger>
 

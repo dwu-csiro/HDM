@@ -3,8 +3,8 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>HDM_2.10</artifactId>
-        <groupId>org.nicta</groupId>
+        <artifactId>scala_2.10</artifactId>
+        <groupId>org.hdm</groupId>
         <version>0.0.1</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
@@ -121,12 +121,12 @@
             <artifactId>junit</artifactId>
         </dependency>
 
-        <!-- <dependency> <groupId>org.hdm.sms</groupId> <artifactId>sms-system-monitor</artifactId>
+        <!-- <dependency> <groupId>com.baidu.bpit.sms</groupId> <artifactId>sms-system-monitor</artifactId>
             <version>${project.parent.version}</version> </dependency> -->
 
         <!-- kafka -->
 <!--        <dependency>
-            <groupId>org.hdm.emp</groupId>
+            <groupId>com.baidu.bpit.emp</groupId>
             <artifactId>emp-util</artifactId>
             <version>${project.parent.version}</version>
         </dependency>-->

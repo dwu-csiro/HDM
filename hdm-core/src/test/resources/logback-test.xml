@@ -32,7 +32,7 @@
         </encoder>
     </appender>
 
-    <logger name="org.nicta.wdy.hdm" level="info" additivity="false">
+    <logger name="org.hdm.core" level="info" additivity="false">
         <appender-ref ref="STDOUT" />
     </logger>
 
